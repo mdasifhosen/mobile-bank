@@ -23,7 +23,8 @@
             </div>
         </div>
         <div>
-            <button class="btn text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700 ]"></i>Logout</button>
+            <button class="btn text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket 
+                rotate-180 text-gray-700 ]"></i>Logout</a></button>
         </div>
     </div>
     
@@ -59,7 +60,7 @@
             <h2>Pay Bill</h2>
 
         </div>
-        <div class="form-btn border-2 p-3 cursor-pointer border-gray-300 text-center rounded-xl">
+        <div id="transaction-button" class="form-btn border-2 p-3 cursor-pointer border-gray-300 text-center rounded-xl">
             <img class="mx-auto" src="./assets/transaction1.png" alt="">
             <h2>Transactions</h2>
 
@@ -188,8 +189,23 @@
 
           <!-- transactions -->
 
+          <div class="form" id="transactions-parent" style="display: none;">
+            <div class="flex justify-between items-center">
+                <h1 class="my-5 font-bold">Transactions History</h1>
+                <p class="text-[#08080880] mr-3" >View All</p>
+            </div>
+            
+            <div id="transaction-container">
+               
+            </div>
 
+          </div>
         </div>
+
+
+
+
+        
     <script src="./home.js"></script>
 </body>
 </html>
