@@ -32,8 +32,7 @@ document
     document.getElementById("available-balance").innerText =
       totalNewAvailableBalance;
   });
-
-// cash out
+  // cash out
 document.getElementById("withdraw-btn").addEventListener("click", function (e) {
   e.preventDefault();
   const amount = parseInt(document.getElementById("withdraw-amount").value);
@@ -59,6 +58,9 @@ document.getElementById("withdraw-btn").addEventListener("click", function (e) {
     return;
   }
 });
+
+
+
 
 // function toggole
 function handleToggle(id) {
@@ -140,6 +142,7 @@ document
     // document.getElementById("cash-out-parent").style.display = "none";
     // document.getElementById("transfer-money-parent").style.display='block';
   });
+  // get bonus
 document.getElementById("bonus-button").addEventListener("click", function () {
   const forms = document.getElementsByClassName("form");
   for (const form of forms) {
@@ -151,9 +154,12 @@ document.getElementById("bonus-button").addEventListener("click", function () {
 
   handleButtonToggle("bonus-button");
 });
-
-document.getElementById("add-button").addEventListener("click", function () {
+//  pay bil
+document.getElementById("pay-button").addEventListener("click", function () {
   const forms = document.getElementsByClassName("form");
-}
- 
-  handleButtonToggle("add-button");
+  for (const form of forms) {
+    form.style.display = "none";
+  }
+  document.getElementById("pay-bil-parent").style.display = "block";
+});
+  
